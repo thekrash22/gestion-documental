@@ -5,12 +5,12 @@
     <div class="center text-center mt5 w40">
         <img src="{{url("images/handesk_full.png")}}" class="w40">
         <p class="w60 center"> {{ __('team.invitedDesc') }}</p>
-        <h3>Register</h3>
+        <h3>Registrarse</h3>
             <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                     {{ csrf_field() }}
                 <table>
                     <tr>
-                        <td class="w40">Name:</td>
+                        <td class="w40">{{ __('auth.name')}}</td>
                         <td class="w60">
                             <input id="name" type="text" class="w100" name="name" value="{{ old('name') }}" required autofocus>
                             @if ($errors->has('name'))
@@ -22,7 +22,7 @@
                     </tr>
 
                     <tr>
-                        <td>E-Mail Address:</td>
+                        <td>{{ __('auth.email')}}</td>
                         <td>
                                 <input id="email" type="email" class="w100" name="email" value="{{ old('email') }}" required>
                                 @if ($errors->has('email'))
@@ -33,7 +33,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Password</td>
+                        <td>{{ __('auth.password')}}</td>
                         <td>
                             <input id="password" type="password" class="w100" name="password" required>
 
@@ -46,7 +46,7 @@
                     </tr>
 
                     <tr>
-                        <td>Confirm Password</td>
+                        <td>{{ __('auth.confirmation')}}</td>
                         <td><input id="password-confirm" type="password" class="w100" name="password_confirmation" required></td>
                     </tr>
 
@@ -58,7 +58,7 @@
 
                     <tr>
                         <td colspan="2">
-                            <button type="submit" class="uppercase p2 center w100">Register</button>
+                            <button type="submit" class="uppercase p2 center w100">{{ __('auth.register')}}</button>
                         </td>
                     </tr>
                 </table>

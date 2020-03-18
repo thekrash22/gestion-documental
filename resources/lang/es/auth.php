@@ -13,4 +13,14 @@ return [
     */
     'failed'   => 'Las credenciales introducidas son incorrectas.',
     'throttle' => 'Demasiados intentos de acceso. Inténtelo de nuevo en :seconds segundos.',
+    'forgot'   => 'Olvido Su Contraseña?',
+    'remember-me' => 'Recuerdame',
+    'login' => 'Ingresar',
+    'name'  => 'Nombre',
+    'email' => 'E-mail',
+    'password' => 'Contraseña',
+    'confirmation' => 'Confirmar Contraseña',
+    'register' => 'Registrar',
+    'reset-password'  => 'Resetear Contraseña',
+    'send-password-link' => 'Enviar Enlace de Reseteo',
 ];
